@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - This is c programming language
- * return: Always 0 (success)
+ * main - This is c programming languag
+e
+ * Return: Always 0 (success)
  */
 int main(void)
 {
