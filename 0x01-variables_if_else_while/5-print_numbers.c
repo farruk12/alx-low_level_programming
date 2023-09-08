@@ -2,16 +2,18 @@
 /**
  * main - program that prints the alphabet in lowercase and upper case
  *
- * Return: Always 0
-*/
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int n;
+	char letter;
 
-	for (n = 0; n <= 9; n++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		printf("%d", n);
+	if (letter != 'e' && letter != 'q')
+	putchar(letter);
 	}
-	print("\n");
+	putchar('\n');
+
 	return (0);
 }
