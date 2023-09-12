@@ -1,17 +1,28 @@
-#include "main.h"
+/*
+ * File: 101-natural.c
+ * Auth: vincent kip
+ */
+
+#include <stdio.h>
 
 /**
- * add - adds two integers and returns the result
- * @a: int to be added to b
- * @b: int to be added to a
- * Return: sum of a and b
+ * main - Lists all the natural numbers below 1024 (excluded)
+ *        that are multiples of 3 or 5.
+ *
+ * Return: Always 0.
  */
-int add(int a, int b)
+int main(void)
 {
-	int c;
+	int i, sum = 0;
 
-	c = a + b;
+	for (i = 0; i < 1024; i++)
+	{
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
+	}
 
-	return (c);
+	printf("%d\n", sum);
+
+	return (0);
 }
 
