@@ -1,10 +1,10 @@
-#include <unistd.h>
 #include "main.h"
 /**
- * main - main entry
- * description: C - Functions, nested loops
- * Return: Always 0 (success)
-*/
+ * main - print _putchar
+ * is written by mbah
+ * Return: 0
+ */
+
 int main(void)
 {
 	_putchar('_');
@@ -16,7 +16,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 
 	return (0);
 }
