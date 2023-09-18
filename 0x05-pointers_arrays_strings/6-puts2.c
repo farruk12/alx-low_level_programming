@@ -2,7 +2,7 @@
 
 /**
  * puts2 - a function that prints every other character of a string
- * @str - starting with the first character, followed by a new line.
+ * @str: integer
 */
 void puts2(char *str)
 {
@@ -11,7 +11,7 @@ void puts2(char *str)
 	char *m = str;
 	int s;
 
-	while(*m != '\0')
+	while (*m != '\0')
 	{
 		m++;
 		n++;
