@@ -19,9 +19,9 @@ char *rot13(char *s)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (s[1] == omar[j])
+			if (s[i] == omar[j])
 			{
-				s[i] = farruk[i];
+				s[i] = farruk[j];
 				break;
 			}
 		}
