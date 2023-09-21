@@ -13,7 +13,7 @@ char *cap_string(char *ptr)
 	{
 		while (!(ptr[x] >= 'a' && ptr[x] <= 'z'))
 			x++;
-
+i
 		if (ptr[x - 1] == ' '  ||
 		    ptr[x - 1] == '\t' ||
 		    ptr[x - 1] == '\n' ||
