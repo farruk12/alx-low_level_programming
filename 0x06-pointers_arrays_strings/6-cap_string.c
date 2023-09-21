@@ -1,37 +1,37 @@
 #include "main.h"
 
 /**
- * cap_string - function that capitalizes all words of a string.
- * @ptr: string
- * Return: Always 0
+ * cap_string - uppercase to lowercase
+ * @ptr: Char
+ * Return: The uppercase version of the input
  */
-char *cap_string(char *str)
+char *cap_string(char *ptr)
 {
 	int x = 0;
 
-	while (str[x])
+	while (ptr[x])
 	{
-		while (!(str[x] >= 'a' && str[x] <= 'z'))
+		while (!(ptr[x] >= 'a' && ptr[x] <= 'z'))
 			x++;
 
-		if (str[x - 1] == ' '  ||
-		    str[x - 1] == '\t' ||
-		    str[x - 1] == '\n' ||
-		    str[x - 1] == '.' ||
-		    str[x - 1] == ',' ||
-		    str[x - 1] == '!' ||
-		    str[x - 1] == '?' ||
-		    str[x - 1] == '{' ||
-		    str[x - 1] == '}' ||
-		    str[x - 1] == ';' ||
-		    str[x - 1] == '(' ||
-		    str[x - 1] == ')' ||
-		    str[x - 1] == '"' ||
+		if (ptr[x - 1] == ' '  ||
+		    ptr[x - 1] == '\t' ||
+		    ptr[x - 1] == '\n' ||
+		    ptr[x - 1] == '.' ||
+		    ptr[x - 1] == ',' ||
+		    ptr[x - 1] == '!' ||
+		    ptr[x - 1] == '?' ||
+		    ptr[x - 1] == '{' ||
+		    ptr[x - 1] == '}' ||
+		    ptr[x - 1] == ';' ||
+		    ptr[x - 1] == '(' ||
+		    ptr[x - 1] == ')' ||
+		    ptr[x - 1] == '"' ||
 		    x == 0)
-			str[x] -= 32;
+			ptr[x] -= 32;
 
 		x++;
 	}
 
-	return (str);
+	return (ptr);
 }
