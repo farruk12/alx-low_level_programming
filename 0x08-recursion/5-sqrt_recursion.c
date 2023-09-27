@@ -3,7 +3,7 @@
 /**
  * _sqrt_recursion - Entry point
  * @n: input
- * Return: always succes
+ * Return: always success
  */
 int _sqrt_recursion(int n)
 {
@@ -18,6 +18,13 @@ int _sqrt_recursion(int n)
 
 	return (Myfunction(n, 1));
 }
+
+/**
+ * Myfunction - Entry point
+ * @n: input
+ * @guess: input
+ * Return: x + 1
+ */
 
 int Myfunction(int n, int guess)
 {
