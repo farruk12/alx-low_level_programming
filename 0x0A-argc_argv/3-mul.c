@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * @argc:  integer
- * @argv:  string
+ * main - multiplies two numbers
+ * @argc: integer
+ * @argv: char
  * Return: always success
  */
+
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
@@ -19,9 +20,10 @@ int main(int argc, char *argv[])
 		printf("%d\n", result);
 		return (0);
 	}
+
 	else
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 }
