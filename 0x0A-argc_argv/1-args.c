@@ -9,14 +9,8 @@
 */
 int main(int argc, char *argv[])
 {
-	int i;
+	if (argv != NULL && argv[0] != NULL)
+		printf("%d\n", argc - 1);
 
-	printf("%d\n", argc - 1);
-	for (i = 1; i < argc; i++)
-	{
-	printf("%s\n", argv[i]);
-	}
-
-	return (0);
+	return 0;
 }
-
