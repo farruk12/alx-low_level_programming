@@ -34,13 +34,16 @@ char *argstostr(int ac, char **av)
 	}
 
 	length = 0;
-	for (i = 0; i <ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			combination[length++] = av[i][j];
 		}
-		combination[length++] = '\n';
+		if (i < ac)
+		{
+			combination[length++] = '\n';
+		}
 	}
 
 	combination[length] = '\0';
