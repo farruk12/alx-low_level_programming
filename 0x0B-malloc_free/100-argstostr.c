@@ -9,21 +9,21 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int length;
-	int i, j;
 	char *combination;
+	int length = 0;
+	int i, j;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
+
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			length++;
 		}
-
 		length++;
 	}
 
@@ -40,10 +40,7 @@ char *argstostr(int ac, char **av)
 		{
 			combination[length++] = av[i][j];
 		}
-		if (i < ac)
-		{
-			combination[length++] = '\n';
-		}
+		combination[length++] = '\n';
 	}
 
 	combination[length] = '\0';
