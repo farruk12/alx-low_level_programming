@@ -8,7 +8,7 @@
  * Return: always (succes)
  */
 int *array_range(int min, int max)
-{	
+{
 	int *ptr;
 	int size = max - min + 1;
 	int i;
@@ -17,7 +17,6 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	
 	ptr = malloc(size * sizeof(int));
 
 	if (ptr == NULL)
