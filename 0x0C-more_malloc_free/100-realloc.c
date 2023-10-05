@@ -5,7 +5,7 @@
  * *_realloc - entry point
  * @ptr: void
  * @old_size: integer
- * @old_size: integer
+ * @new_size: integer
  * Return: always (succes)
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
