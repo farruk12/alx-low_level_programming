@@ -1,13 +1,12 @@
-#include <stdlib.h>
 #include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - entry point
+ * main - perform calculator functions on command line
  * @argc: argument count
  * @argv: argument vector
- *
- * Return: always succes
+ * Return: results of calc function execution
  */
 int main(int argc, char *argv[])
 {
@@ -36,7 +35,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	printf("%d\n", get_op_func(op) (num1, num2));
+	printf("%d\n", get_op_func(op)(num1, num2));
 
 	return (0);
 }

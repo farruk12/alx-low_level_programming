@@ -1,9 +1,9 @@
-#include <stdlib.h>
 #include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * get_op_func - entry point
+ * get_op_func - select the option to perform atithmetic op
  * @s: operator argument
  * Return: result of selected choice
  */
@@ -20,8 +20,9 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
+
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
-		i++;
+	i++;
 
 	return (ops[i].f);
 }
