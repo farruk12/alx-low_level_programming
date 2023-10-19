@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * print_list - a function that prints all the elements
- * @: a constant pointer
- * Return: a function that prints all the elements
+ * print_list - a function that prints all the
+ * @h: a constant pointer
+ * Return: always success
  */
 
 size_t print_list(const list_t *h)
@@ -15,7 +15,7 @@ size_t print_list(const list_t *h)
 		if (h->str == NULL)
 			printf("[0] (nil)");
 		else
-			printf("[%d] %s\n", h->len, h ->str);
+			printf("[%d] %s\n", h->len, h->str);
 
 		h = h->next;
 		count++;
