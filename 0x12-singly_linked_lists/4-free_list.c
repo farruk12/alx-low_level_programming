@@ -1,21 +1,21 @@
 #include "lists.h"
 
 /**
- * free_ list - function to free
+ * free_list - function to free
  * @head: pointer
  * Return: always success
- *
  */
+
 void free_list(list_t *head)
 {
-	list_t *c = head;
-	list_t *p;
+	list_t *cur_rent = head;
+	list_t *temp;
 
-	while (c != NULL)
+	while (cur_rent != NULL)
 	{
-		p = c;
-		c = c->next;
-		free(p->str);
-		free(p);
+		temp = cur_rent;
+		cur_rent = cur_rent->next;
+		free(temp->str);
+		free(temp);
 	}
 }
