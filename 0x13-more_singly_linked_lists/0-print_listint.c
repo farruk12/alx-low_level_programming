@@ -8,14 +8,14 @@
 
 size_t print_listint(const listint_t *h)
 {
-	int count = 0;
+	unsigned int count = 0;
 
 	if (h == NULL)
 		printf("Linked list is empty\n");
 	while (h != NULL)
 	{
 		count++;
-		printf("%d\n", h->n);
+		printf("%u\n", h->n);
 		h = h->next;
 	}
 	return (count);
