@@ -8,7 +8,7 @@
 
 size_t print_listint(const listint_t *h)
 {
-	unsigned int count = 0;
+	size_t count = 0;
 
 	if (h == NULL)
 		printf("Linked list is empty\n");
