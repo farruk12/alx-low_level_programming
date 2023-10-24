@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - function that adds a new node at the end of a linked list
+ * add_nodeint_end - function that adds a new node at the end of a linked list
  * @head: double ponter to our structure
  * @n: our value
  * Return: address of new element
